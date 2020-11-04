@@ -6,6 +6,7 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.content.Intent;
+import android.content.res.AssetFileDescriptor;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.MenuItem;
@@ -13,6 +14,12 @@ import android.view.View;
 import android.widget.ImageButton;
 
 import com.google.android.material.navigation.NavigationView;
+
+import java.io.FileInputStream;
+import java.io.IOError;
+import java.io.IOException;
+import java.nio.MappedByteBuffer;
+import java.nio.channels.FileChannel;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -32,7 +39,6 @@ public class MainActivity extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
 
                 switch (menuItem.getItemId()) {
-
                     case R.id.drawer_profile:
                         startActivity(new Intent(MainActivity.this, DrivingMode.class));
                         break;

@@ -3,13 +3,11 @@ package com.hrishistudio.vnit.connectedvehicle;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
-
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
-
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.snackbar.Snackbar;
@@ -83,7 +81,6 @@ public class SignUpActivity extends AppCompatActivity {
                 }
             });
         }
-
     }
 
     public void goToLogin(View view){

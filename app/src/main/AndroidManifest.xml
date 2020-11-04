@@ -14,7 +14,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".NewVehicle"></activity>
+        <activity android:name=".HealthDashboard"></activity>
+        <activity android:name=".NewVehicle" />
         <activity android:name=".VehicleList" />
         <activity android:name=".DrivingMode" />
         <activity android:name=".SignUpActivity" />

@@ -20,6 +20,11 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
+    aaptOptions{
+        noCompress "tflite"
+        noCompress "lite"
+    }
 }
 
 dependencies {
@@ -43,5 +48,8 @@ dependencies {
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'com.firebaseui:firebase-ui:0.3.1'
     implementation 'com.makeramen:roundedimageview:2.3.0'
+    implementation platform('com.google.firebase:firebase-bom:26.0.0')
+    implementation 'com.google.firebase:firebase-ml-model-interpreter'
+    implementation 'org.tensorflow:tensorflow-lite:2.3.0'
 }
 apply plugin: 'com.google.gms.google-services'

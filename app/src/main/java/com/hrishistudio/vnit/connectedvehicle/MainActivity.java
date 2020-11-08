@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
 
                 switch (menuItem.getItemId()) {
                     case R.id.drawer_profile:
-                        startActivity(new Intent(MainActivity.this, DrivingMode.class));
+                        startActivity(new Intent(MainActivity.this, DrivingActivity.class));
                         break;
 
                     case R.id.drawer_dashboard:
